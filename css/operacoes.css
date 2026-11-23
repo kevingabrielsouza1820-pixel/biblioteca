@@ -1,0 +1,131 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+ }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000000;
+    background-color: #072424;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  
+}
+.Cabecalho {
+    display: flex;
+    background-color: #0c4586;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+    border:2px solid black;
+}
+.BotaoVoltar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 40px;
+    background-color: #2c8eff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    border:2px solid black;
+}
+.BotaoVoltar:hover{
+    background-color: #1b3b5f;
+}
+.Container{
+    background-color:#0c4586;
+    border:2px solid black;
+    border-radius: 12px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1500px;
+    margin: 50px 200px;
+}
+
+.Rodape {
+    display: flex;
+    background-color: #0c4586;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+    margin-top: auto;  
+    padding:10px;
+}
+
+.icone{
+    display: flex;
+    margin: 20px;
+}
+
+.opcoes-operacao{
+    display: flex;
+    flex-direction: row;
+}
+
+.btn_retirada{
+    width: 25%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-color: #2c8eff; 
+    color: #ffffff;
+    border: 2px solid #1b3b5f;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-items: center;
+}
+
+.btn_retirada p h3{
+    margin: 5%;
+}
+
+.btn_retirada h3{
+    margin-top: 3px;
+}
+
+.btn_devolucao{
+    width: 25%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-color: #2c8eff; 
+    color: #ffffff;
+    border: 2px solid #1b3b5f;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-items: center;
+}
+
+.btn_doacao{
+    width: 25%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-color: #2c8eff; 
+    color: #ffffff;
+    border: 2px solid #1b3b5f;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-items: center;
+}
+
+.subtitulo{
+    color: white;
+}
