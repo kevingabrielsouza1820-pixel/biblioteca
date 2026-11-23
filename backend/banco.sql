@@ -100,22 +100,41 @@ USE biblioteca;
 
 -- -- CRAIÇÃO DAS VIEWS 
 
--- CREATE VIEW vw_histotico AS 
---     SELECT nome_usuario, data_retirada, titulo_livro FROM usuario, retirada, livro;
+-- CREATE VIEW vw_historico AS
+-- SELECT
+--     u.nome_usuario,
+--     r.data_retirada,
+--     l.titulo_livro
+-- FROM usuario u
+-- INNER JOIN retirada r ON u.id_usuario = r.id_usuario
+-- INNER JOIN livro l ON r.id_livro = l.id_livro;
 
--- SELECT * FROM vw_histotico;
+-- SELECT * FROM vw_historico;
 
--- CREATE VIEW vw_histotico_doacao AS
---     SELECT data_doacao, titulo_livro, categoria_livro FROM doacao, livro;
 
--- SELECT * FROM vw_histotico_doacao;
+-- CREATE VIEW vw_historico_doacao AS
+-- SELECT
+--     d.data_doacao,
+--     l.titulo_livro,
+--     l.categoria_livro
+-- FROM doacao d
+-- INNER JOIN livro l ON d.id_livro = l.id_livro;
+
+-- SELECT * FROM vw_historico_doacao;
 
 
 -- CREATE VIEW vw_autorizacao AS
---     SELECT nome_usuario, data_doacao, dano_devolucao, titulo_livro FROM usuario, doacao, devolucao, livro;
+-- SELECT
+--     u.nome_usuario,
+--     d.data_doacao,
+--     dev.dano_devolucao,
+--     l.titulo_livro
+-- FROM usuario u
+-- INNER JOIN doacao d ON u.id_usuario = d.id_usuario
+-- INNER JOIN devolucao dev ON u.id_usuario = dev.id_usuario
+-- INNER JOIN livro l ON dev.id_livro = l.id_livro;
 
 -- SELECT * FROM vw_autorizacao;
-
 
 
 -- CREATE ROLE IF NOT EXISTS 'usuarios';
